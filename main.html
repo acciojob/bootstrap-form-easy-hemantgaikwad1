@@ -11,37 +11,39 @@ rel="stylesheet">
 
 <body>
 	<!-- the entire body must be written by student -->
-	<div class="container mt-5">
+<div class="container mt-4">
 
-<form class="needs-validation">
+<form>
 
-<div class="row">
+<div class="mb-3">
+<label for="first-name-input" class="form-label">
+First Name
+</label>
 
-<div class="col-md-6 mb-3">
-<label>First Name</label>
 <input
 id="first-name-input"
 type="text"
-class="form-control"
-required>
+class="form-control">
 
 <div class="invalid-feedback">
-Please provide first name
+Please enter first name
 </div>
 </div>
 
-<div class="col-md-6 mb-3">
-<label>Last Name</label>
+
+<div class="mb-3">
+
+<label for="last-name-input" class="form-label">
+Last Name
+</label>
 
 <input
+id="last-name-input"
 type="text"
-class="form-control"
-required>
+class="form-control">
 
 <div class="invalid-feedback">
-Please provide last name
-</div>
-
+Please enter last name
 </div>
 
 </div>
@@ -49,16 +51,17 @@ Please provide last name
 
 <div class="mb-3">
 
-<label>Email</label>
+<label for="email-input" class="form-label">
+Email Address
+</label>
 
 <input
 id="email-input"
 type="email"
-class="form-control"
-required>
+class="form-control">
 
 <div class="invalid-feedback">
-Please provide valid email
+Please enter email
 </div>
 
 </div>
@@ -66,16 +69,17 @@ Please provide valid email
 
 <div class="mb-3">
 
-<label>College Name</label>
+<label for="college-input" class="form-label">
+College
+</label>
 
 <input
 id="college-input"
 type="text"
-class="form-control"
-required>
+class="form-control">
 
 <div class="invalid-feedback">
-Please provide college name
+Please enter college
 </div>
 
 </div>
@@ -83,16 +87,17 @@ Please provide college name
 
 <div class="mb-3">
 
-<label>Roll Number</label>
+<label for="roll-no-input" class="form-label">
+Roll No.
+</label>
 
 <input
 id="roll-no-input"
-type="number"
-class="form-control"
-required>
+type="text"
+class="form-control">
 
 <div class="invalid-feedback">
-Please provide roll number
+Please enter roll number
 </div>
 
 </div>
@@ -100,31 +105,18 @@ Please provide roll number
 
 <div class="mb-3">
 
-<label>Graduation Year</label>
+<label for="grad-year-select" class="form-label">
+Graduation Year
+</label>
 
 <select
-class="form-select"
-required>
+id="grad-year-select"
+class="form-select">
 
-<option value="">
-Choose...
-</option>
-
-<option>
-2020
-</option>
-
-<option>
-2021
-</option>
-
-<option>
-2022
-</option>
-
-<option>
-2023
-</option>
+<option>2020</option>
+<option>2021</option>
+<option>2022</option>
+<option>2023</option>
 
 </select>
 
@@ -135,17 +127,18 @@ Select graduation year
 </div>
 
 
-<div class="form-check mb-3">
+<div class="form-check">
 
 <input
 id="conditions-checkbox"
 type="checkbox"
-class="form-check-input"
-required>
+class="form-check-input">
 
-<label class="form-check-label">
+<label
+for="conditions-checkbox"
+class="form-check-label">
 
-Accept Terms and Conditions
+Agree to terms and conditions
 
 </label>
 
@@ -155,18 +148,10 @@ Accept conditions
 
 </div>
 
-
-<button
-class="btn btn-primary"
-type="submit">
-
-Submit
-
-</button>
-
 </form>
 
 </div>
+
 
     <script type="text/javascript" src="./script.js">
 </script>
